@@ -1,47 +1,42 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import HeaderComponent from "@/components/HeaderComponent.vue";
+import GalleryComponent from "@/components/GalleryComponent.vue";
+import ContactsComponent from "@/components/ContactsComponent.vue";
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <HeaderComponent />
   </header>
 
   <main>
-    <TheWelcome />
+    <section>
+      <h1>
+        Graphic Designer Portfolio
+      </h1>
+      <h2>
+        by Artur Smykal
+      </h2>
+    </section >
+    <section id="gallery">
+      <GalleryComponent />
+    </section>
+    <section id="Contacts">
+      <ContactsComponent />
+    </section>
   </main>
 </template>
 
 <style scoped>
 header {
-  line-height: 1.5;
+  max-width: 1920px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+main {
+  margin: 3rem auto;
+  max-width: 1200px;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
