@@ -4,7 +4,9 @@
 
 <template>
   <div class="header-container">
-    <div class="logo"></div>
+    <a href="#top">
+      <div class="logo"></div>
+    </a>
     <nav>
       <a href="#gallery">
         Gallery
@@ -49,5 +51,8 @@
     color: var(--vt-c-text-dark-1);
     font-weight: bold;
     text-decoration: none;
+  }
+  .header-container nav a:hover {
+    color: var(--vt-c-white-soft);
   }
 </style>

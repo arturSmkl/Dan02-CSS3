@@ -23,7 +23,8 @@ for (let i=0; i < 16; i++) {
 
 <style scoped>
   .grid-container {
-    height: 1200px;
+    width: 100%;
+    aspect-ratio: 1/1;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -31,4 +32,5 @@ for (let i=0; i < 16; i++) {
     align-items: center;
     margin-bottom: 3rem;
   }
+
 </style>

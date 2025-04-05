@@ -21,9 +21,16 @@ import { ref, defineProps } from 'vue';
 
 <style scoped>
 div {
-  width: 280px;
-  height: 280px;
+  width: 90%;
+  aspect-ratio: 1/1;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease;
 }
+
+div:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
 </style>
